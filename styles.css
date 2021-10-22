@@ -7,11 +7,22 @@ html {
     color: cornflowerblue;
 }
 
+body {
+    height: 100%;
+    position: relative;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+.cinzel {
+    font-family: "Cinzel";
+}
+
+
 
 
 /* hamburger menu styles */
@@ -23,23 +34,10 @@ a {
     text-decoration: none;
 }
 
-.header{
-    /* border-bottom: 5px solid #E2E8F0;
-    box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05); */
-    background-color: white;
-}
-
-.navbar {
-    display: flex;
-    justify-content: right;
-    align-items: right;
-    padding: 1.5rem;
-
-}
-
-.hamburger {
-    display: none;
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #475569;
 }
 
 .bar {
@@ -52,26 +50,57 @@ a {
     background-color: white;
 }
 
-.nav-menu {
-    display: flex;
-    justify-content: right;
-    align-items: right;
- }
- 
- .nav-item {
-    margin-left: 3rem;
-} 
-
-.nav-link{
-    font-size: 1.6rem;
-    font-weight: 400;
-    color: #475569;
-    
+.navbar {
+    height: 4rem;
 }
 
-/* .nav-link:hover{
-    color: black;
-} */
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    text-align: right;
+    transition: 0.3s;
+    box-shadow:
+        0 10px 27px rgba(0, 0, 0, 0.05);
+    padding-right: 50px;
+    z-index:100;
+}
+
+.nav-menu.active {
+    left: 0;
+}
+
+.nav-item {
+    margin: 2rem 0;
+    z-index: 101;
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    top:20px;
+    right:20px;
+    background-color: cornflowerblue;
+    border-radius: 3px;
+    border: 2px white solid;
+    
+}
 
 .logo {
     font-size: 5rem;
@@ -87,21 +116,39 @@ a {
 }
 
 .about-container {
-    
-    width: 400px;
-    height:300px;
-    border: 2px solid blue;
-    justify-content: space-around;
-    align-content: center;
-    justify-self:space-around;
-    align-self:space-around;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 100px;
+    height: 100vh !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
     
 }
 
-.photo {
+ .photo {
+    
+    width: 300px;
+    height:250px;
+    border: 2px solid blue;
+    margin-top: 30px;
+    border-radius: 10px;
+    display: block;
+    
+} 
+
+
+
+/* .photo {
     width: 150px;
     height:150px;
     border-radius: 50%;
@@ -113,67 +160,45 @@ a {
     margin-right: none;
     margin-left: auto;
     
-}
+} */
 
-.hello {
-    width: 300px;
-    margin-top: 30px;
+ .hello {
+    position: relative;
+    width: 45%; 
     margin-right: auto;
     margin-left: auto;
+    text-align: left;
+    max-width: 450px;    
+    min-width: 325px;
+    display: block;
     
+    
+    
+} 
+
+h1 {
+    font-size: 3.5rem;
+   
+}
+h2 {
+    font-size: 2rem;
+    border-bottom: 3px cornflowerblue dotted;
+}
+h3 {
+    font-size: 1rem;
+    margin-top: 25px;
 }
 
 
-@media only screen and (max-width: 768px) {
-    
-    .navbar {
-        height: 4rem;
-    }
+@media (min-width: 780px) {
 
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
+.about-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    height: 85vh;
+    padding: 7vw;
     }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .nav-menu {
-        position: fixed;
-        left: -100%;
-        top: 4rem;
-        flex-direction: column;
-        background-color: #fff;
-        width: 100%;
-        text-align: right;
-        transition: 0.3s;
-        box-shadow:
-            0 10px 27px rgba(0, 0, 0, 0.05);
-        padding-right: 50px;
-    }
-
-    .nav-menu.active {
-        left: 0;
-    }
-
-    .nav-item {
-        margin: 1.5rem 0;
-    }
-
-    .hamburger {
-        display: block;
-        cursor: pointer;
-        position: fixed;
-        top:20px;
-        right:20px;
-        background-color: cornflowerblue;
-        border-radius: 3px;
-        border: 2px white solid;
-        
-    }
-
 }
+
