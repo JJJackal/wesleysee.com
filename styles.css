@@ -18,14 +18,20 @@ body {
     box-sizing: border-box;
 }
 
-
+.indicator {
+    height: 20px;
+    width: 20px;
+    border:3px solid cornflowerblue;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 300px;
+}
 
 .cinzel {
     font-family: "Cinzel";
+   
+
 }
-
-
-
 
 /* hamburger menu styles */
 li {
@@ -53,7 +59,7 @@ a {
 }
 
 .navbar {
-    height: 4rem;
+    height: 3rem;
 }
 
 .hamburger.active .bar:nth-child(2) {
@@ -105,21 +111,24 @@ a {
 }
 
 .logo {
-    font-size: 5rem;
+    font-size: 6rem;
     font-weight: 500;
-    position: fixed;
+    /* position: fixed; */
     /* top:0; */
     /* left:0; */
     z-index: 20;
     /* box-shadow: 2px 2px grey; */
     padding-left: 15px;
     color:cornflowerblue;
+    margin: 0;
+
     
 }
 
-.about-container {
-    padding-top: 70px;
-    height: 100vh !important;
+
+
+.intro-container, .projects-container, .about-container {
+    padding-bottom: 300px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -138,6 +147,8 @@ a {
     
 }
 
+
+
  .photo {
     
     width: 300px;
@@ -146,9 +157,36 @@ a {
     margin-top: 30px;
     border-radius: 10px;
     display: block;
-    
+   
 } 
 
+main {
+    position: relative;
+    height: 100%;
+}
+
+.test {
+    width: 300px;
+    height: 250px;
+    border: 2px solid cornflowerblue;
+    margin-top: 30px;
+    border-radius: 10px;
+    display: inline-block;
+    margin: 20px;
+}
+
+.t-l {
+    order: 1;
+}
+.t-r {
+    order:2
+}
+.b-l {
+    order:3;
+}
+.b-r {
+    order:4;
+}
 
 
 /* .photo {
@@ -168,13 +206,15 @@ a {
  .hello {
     position: relative;
     width: 45%; 
-    margin-right: auto;
-    margin-left: auto;
     text-align: left;
     max-width: 450px;    
     min-width: 325px;
     display: block;
 } 
+
+.r {
+    text-align: right;
+}
 
 h1 {
     font-size: 3.5rem;
@@ -189,17 +229,98 @@ h3 {
     font-size: 1rem;
     margin-top: 25px;
 }
+footer {
+    background-color: cornflowerblue;
+}
 
+/* reset */
+form input,
+form select,
+form textarea,
+form fieldset,
+form optgroup,
+form label,
+.StripeElement {
+  font-family: inherit;
+  font-size: 100%;
+  color: white;
+  border: none;
+  border-radius: 0;
+  display: block;
+  width: 75%;
+  padding: 0;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin-left: auto;
+  margin-right: auto;
+ 
+}
+form label,
+form legend {
+  font-size: 0.825rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* border, padding, margin, width */
+form input,
+form select,
+form textarea,
+.StripeElement {
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0.75em 1rem;
+ 
+}
+form input:focus,
+form select:focus,
+form textarea:focus,
+.StripeElement:focus {
+  background-color: white;
+  outline-style: solid;
+  outline-width: thin;
+  outline-color: gray;
+  outline-offset: -1px;
+}
+form [type="text"],
+form [type="email"],
+.StripeElement {
+  width: 100%;
+}
+form [type="button"],
+form [type="submit"],
+form [type="reset"] {
+  width: auto;
+  cursor: pointer;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
+form [type="button"]:focus,
+form [type="submit"]:focus,
+form [type="reset"]:focus {
+  outline: none;
+}
+
+form select {
+  text-transform: none;
+}
+
+header {
+    height:100vh;
+}
 
 @media (min-width: 780px) {
 
-.about-container {
+.intro-container, .about-container  {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    height: 85vh;
-    padding: 9vw;
+    /* height: 85vh; */
+    /* margin: 90px; */
     }
 }
 

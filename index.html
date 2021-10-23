@@ -47,19 +47,72 @@
             </button>
         </nav>
     </div>
-</header>
-<main> 
-    <div class="about-container">
+
+
+    <div class="intro-container">
         <div class="hello">
         <h1 class="">Hi there,</h1>
-        <h2>Just call me Wes </h2>
-        <h3>I'm a portland-based web developer with an enthusiasm for clean interfaces and minimalistic design</h3>
+        <h2>just call me Wes </h2>
+        <h3>I'm a portland-based web developer with an enthusiasm for clean interfaces and minimalist design</h3>
         </div>
-        <div class="photo" data-aos="fade-in"></div>
+        <div class="photo"></div>
+    </div>
+    
+
+<div class="indicator"></div>
+</header>
+<main> 
+
+   
+   
+    <div class="projects-container">
+        <div class="top-projects">
+            <div class="t-l test" data-aos="fade-down">1</div>
+            <div class="t-r test" data-aos="fade-down">2</div>
+        </div>
+        <div class="bottom-projects">
+            <div class="b-l test" data-aos="fade-up">3</div>
+            <div class="b-r test" data-aos="fade-up">4</div>
+        </div>
+    </div>
+    <div class="about-container">
+        <div class="photo" data-aos="fade-right"></div>
+        <div class="hello r" data-aos="fade-left">
+        <h2>please give me a job</h2>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero libero tempore dignissimos laboriosam a nesciunt nobis et illum quibusdam? Distinctio exercitationem explicabo aut aliquam provident.</h3>
+        </div>
+        
     </div>
 
+    <div class="about-container">
+        
+        <div class="hello" data-aos="fade-right">
+        <h2>please give me a job</h2>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero libero tempore dignissimos laboriosam a nesciunt nobis et illum quibusdam? Distinctio exercitationem explicabo aut aliquam provident.</h3>
+        </div>
+        <div class="photo" data-aos="fade-left"></div>
+    </div>
+   
 </main>
 
+
+<footer>
+
+    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="POST">
+        <fieldset id="fs-frm-inputs">
+          <label for="full-name">Full Name</label>
+          <input type="text" name="name" id="full-name" placeholder="First and Last" required="true">
+             <label for="organization-name">Organization</label>
+          <input type="text" organization="organization" id="full-name" placeholder="Organization Name" required="false">
+          <label for="email-address">Email Address</label>
+          <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="true">
+          <label for="message">Message</label>
+          <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required="true"></textarea>
+          <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+        </fieldset>
+        <input type="submit" value="Submit">
+      </form>
+</footer>
 
 
 
