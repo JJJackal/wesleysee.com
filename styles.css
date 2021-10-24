@@ -1,26 +1,30 @@
 /* reset styles */
 
 html {
-    margin: 0;
-    padding: 0;
+    /* margin: 0; */
+    /* padding: 0; */
     background-color: #E5EDFC;
     color: cornflowerblue;
+    max-width: 1000px;
 }
 
 body {
     height: 100%;
     position: relative;
+    
+    
 }
 
 * {
-    margin: 0;
+    /* margin: 0; */
     padding: 0;
     box-sizing: border-box;
+    margin: 0 auto;
 }
 
 .indicator {
     height: 20px;
-    width: 100%;
+    /* width: 100%; */
     border:3px solid cornflowerblue;
     margin-left: auto;
     margin-right: auto;
@@ -120,9 +124,9 @@ a {
 .logo {
     font-size: 6rem;
     font-weight: 500;
-    /* position: fixed; */
-    /* top:0; */
-    /* left:0; */
+    position: fixed; 
+     top:0; 
+     left:0;
     z-index: 20;
     /* box-shadow: 2px 2px grey; */
     padding-left: 15px;
@@ -149,11 +153,13 @@ a {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 100%;
+    /* width: 100%; */
     font-family: 'Open Sans', sans-serif;
-    
 }
-
+header {
+    height: 100vh;
+    padding-top: 200px;
+}
 
 
  .photo {
@@ -238,6 +244,11 @@ h3 {
 }
 footer {
     background-color: cornflowerblue;
+    width: 100%;
+    padding-top: 50px;
+    max-width: 2000px;
+    border-radius: 12px;
+    border: 5px solid white;
 }
 
 /* reset */
@@ -248,13 +259,14 @@ form fieldset,
 form optgroup,
 form label,
 .StripeElement {
-  font-family: inherit;
-  font-size: 100%;
+  /* font-size: 100%; */
   color: white;
   border: none;
   border-radius: 0;
   display: block;
-  width: 75%;
+  width: 90%;
+  /* max-width: 600px;
+  min-width: 300px; */
   padding: 0;
   margin: 0;
   -webkit-appearance: none;
@@ -279,6 +291,8 @@ form textarea,
   border: 1px solid rgba(0, 0, 0, 0.2);
   background-color: rgba(255, 255, 255, 0.9);
   padding: 0.75em 1rem;
+  resize: none;
+  /* margin: 0; */
  
 }
 form input:focus,
@@ -294,7 +308,7 @@ form textarea:focus,
 form [type="text"],
 form [type="email"],
 .StripeElement {
-  width: 100%;
+  /* width: 100%; */
 }
 form [type="button"],
 form [type="submit"],
@@ -317,6 +331,13 @@ form select {
 
 header {
     height:100vh;
+}
+.submit {
+    color: cornflowerblue;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 150px;
+    /* height: 75px; */
 }
 
 @media (min-width: 780px) {
