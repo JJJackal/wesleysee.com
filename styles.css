@@ -20,22 +20,30 @@ body {
     padding: 0;
     box-sizing: border-box;
     margin: 0 auto;
+} 
+
+
+
+.arrow {
+    text-align: center;
+    display:block;
+    margin:auto;
+    transform: translateY(8px);
+    /* background-color: cornflowerblue;
+    width: 50px;
+    border-radius: 5px;
+    border: 2px white solid; */
+    margin-bottom: 70px;
+    margin-top: 30px;
+    z-index: 20000;
 }
 
-.indicator {
-    height: 20px;
-    /* width: 100%; */
-    border:3px solid cornflowerblue;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 300px;
-    display: block;
+.even {
+    transform: translateX(-300px) rotate(-22deg);
 }
 
-.cinzel {
-    font-family: "Cinzel";
-   
-
+.odd {
+    transform: translateX(300px) rotate(22deg);
 }
 
 /* hamburger menu styles */
@@ -50,9 +58,12 @@ a {
 .nav-link{
     font-size: 1.6rem;
     font-weight: 400;
-    color: #475569;
+    color: cornflowerblue;
+    font-family: 'Open Sans', sans-serif;
 }
-
+.nav-link:hover {
+    color:cadetblue;
+}
 .bar {
     display: block;
     width: 33px;
@@ -62,6 +73,7 @@ a {
     transition: all 0.1s ease-in-out;  
     background-color: white;
 }
+
 
 .navbar {
     height: 3rem;
@@ -90,7 +102,7 @@ a {
     background-color: #fff;
     width: 100%;
     text-align: right;
-    transition: 0.1s;
+    transition: 0.1  s;
     box-shadow:
         0 10px 27px rgba(0, 0, 0, 0.05);
     padding-right: 50px;
@@ -164,8 +176,8 @@ a {
     color: white;
 }
 header {
-    height: 100vh;
-    padding-top: 200px;
+    height: 100%;
+    padding-top: 100px;
 }
 
 .intro-container {
@@ -193,8 +205,8 @@ main {
 }
 
 .test {
-    width: 300px;
-    height: 250px;
+    width: 400px;
+    height: 300px;
     border: 2px solid white;
     margin-top: 30px;
     border-radius: 10px;
@@ -244,17 +256,24 @@ main {
 }
 
 h1 {
-    font-size: 3.5rem;
-   
+    font-size: 4rem;
+}
+
+.noto {
+    font-family: 'Noto Serif Display', serif;
 }
 h2 {
     font-size: 2rem;
+    margin-bottom: 30px;
+    
+}
+
+.underline {
     text-decoration: underline dotted;
-    text-decoration-thickness: auto;
 }
 h3 {
     font-size: 1rem;
-    margin-top: 25px;
+    /* margin-top: 25px; */
 }
 footer {
     background-color: cornflowerblue;
@@ -287,7 +306,14 @@ form label,
   -moz-appearance: none;
   margin-left: auto;
   margin-right: auto;
+  font-family: 'Open Sans', sans-serif;
+  border-radius: 3px;
+    /* border: 2px white solid; */
  
+}
+form input,
+textarea {
+    color:cornflowerblue;
 }
 form label,
 form legend {
@@ -302,7 +328,7 @@ form select,
 form textarea,
 .StripeElement {
   box-sizing: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.2);
+  /* border: 1px solid rgba(0, 0, 0, 0.2); */
   background-color: rgba(255, 255, 255, 0.9);
   padding: 0.75em 1rem;
   resize: none;
@@ -316,8 +342,9 @@ form textarea:focus,
   background-color: white;
   outline-style: solid;
   outline-width: thin;
-  outline-color: gray;
+  outline-color: white;
   outline-offset: -1px;
+  color:cornflowerblue;
 }
 /* form [type="text"],
 form [type="email"],
@@ -343,26 +370,33 @@ form select {
   text-transform: none;
 }
 
-header {
-    height:100vh;
-}
+
 .submit {
     color: cornflowerblue;
     margin-top: 20px;
     margin-bottom: 20px;
     width: 150px;
+    border-radius: 3px;
     /* height: 75px; */
 }
 
+
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 70px; }
+
 @media (min-width: 780px) {
 
-.intro-container, .about-container  {
+ .intro-container, .about-container, .projects-container  {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    /* height: 85vh; */
-    /* margin: 90px; */
+    
     }
-}
+
+   
+} 
 
