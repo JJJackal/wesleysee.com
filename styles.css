@@ -29,13 +29,6 @@ body {
     display:block;
     margin:auto;
     transform: translateY(8px);
-    /* background-color: cornflowerblue;
-    width: 50px;
-    border-radius: 5px;
-    border: 2px white solid; */
-    margin-bottom: 70px;
-    margin-top: 30px;
-    z-index: 20000;
 }
 
 .even {
@@ -126,28 +119,13 @@ a {
     right:20px;
     background-color: cornflowerblue;
     border-radius: 3px;
-    border: 2px white solid;
+    border: 1px solid#E5EDFC;
     z-index: 1000;
     
 }
 
-.logo {
-    font-size: 6rem;
-    font-weight: 500;
-    position: fixed; 
-     top:0; 
-     left:0;
-    z-index: 20;
-    padding-left: 15px;
-    color:cornflowerblue;
-    margin: 0;
 
-    
-}
-
-
-
-.intro-container, .projects-container, .about-container {
+.container {
     margin-bottom: 300px;
     padding-bottom: 50px;
     display: -webkit-box;
@@ -163,16 +141,12 @@ a {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    /* width: 100%; */
     font-family: 'Open Sans', sans-serif;
-    /* background-color: white; */
-
     background-color: cornflowerblue;
     width: 100%;
     padding-top: 50px;
     max-width: 2000px;
     border-radius: 12px;
-    border: 5px solid white;
     color: white;
 }
 header {
@@ -180,11 +154,11 @@ header {
     padding-top: 100px;
 }
 
-.intro-container {
+.intro {
     background-color: white;
     color: cornflowerblue;
 }
-.intro-container > .photo {
+.intro > .photo {
     border: 2px solid cornflowerblue;
 }
 
@@ -228,20 +202,6 @@ main {
 }
 
 
-/* .photo {
-    width: 150px;
-    height:150px;
-    border-radius: 50%;
-    border: 2px solid black;
-    justify-content: space-around;
-    align-content: center;
-    justify-self:space-around;
-    align-self:space-around;
-    margin-right: none;
-    margin-left: auto;
-    
-} */
-
  .hello {
     position: relative;
     width: 45%; 
@@ -273,6 +233,7 @@ h2 {
 }
 h3 {
     font-size: 1rem;
+    flex: none;
     /* margin-top: 25px; */
 }
 footer {
@@ -281,7 +242,7 @@ footer {
     padding-top: 50px;
     max-width: 2000px;
     border-radius: 12px;
-    border: 5px solid white;
+    padding-bottom: 15px;
 }
 
 /* reset */
@@ -308,7 +269,7 @@ form label,
   margin-right: auto;
   font-family: 'Open Sans', sans-serif;
   border-radius: 3px;
-    /* border: 2px white solid; */
+    
  
 }
 form input,
@@ -328,7 +289,6 @@ form select,
 form textarea,
 .StripeElement {
   box-sizing: border-box;
-  /* border: 1px solid rgba(0, 0, 0, 0.2); */
   background-color: rgba(255, 255, 255, 0.9);
   padding: 0.75em 1rem;
   resize: none;
@@ -389,7 +349,7 @@ form select {
 
 @media (min-width: 780px) {
 
- .intro-container, .about-container, .projects-container  {
+ .container  {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
@@ -400,3 +360,25 @@ form select {
    
 } 
 
+@media (max-width: 780px) {
+    html {
+        max-width: 500px;
+    }
+    .container {
+        width:450px;
+        margin: auto;
+        margin-bottom: 25px;
+    }
+
+    .arrow {
+        display: none;
+    }
+}
+
+@media (max-width: 500x) {
+    .container {
+        width: 360px;
+        background-color: black;
+      
+    }
+}
