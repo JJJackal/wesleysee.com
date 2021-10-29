@@ -52,7 +52,7 @@ a {
 }
 
 .first {
-    background-image: url("IMG_7664.jpeg");
+    background-image: url("images/IMG_7664.jpeg");
     background-size:100% auto;
     overflow:hidden;
     background-repeat:no-repeat;
@@ -143,7 +143,7 @@ a {
 
 
 .container {
-    margin-bottom: 300px;
+    margin-bottom: 200px;
     padding-bottom: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -152,7 +152,7 @@ a {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-box-pack: center;
+    -webkit-box-pack: center; 
     -ms-flex-pack: center;
     justify-content: center;
     -webkit-box-align: center;
@@ -169,7 +169,11 @@ a {
 
 .projects, .about, .arrow, footer {
     text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    text-align: center;
 }
+
+
+
 
 header {
     height: 100%;
@@ -180,6 +184,7 @@ header {
     background-color: white;
     color: cornflowerblue;
     text-shadow: 2px 4px 3px rgba(0,0,0,.1);
+    margin-bottom: 400px;
     
 }
 
@@ -209,6 +214,7 @@ main {
     display: inline-block;
     margin: 20px;
     box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+    background-image: url("images/anxiiety-desktop.png")
 }
 
 .t-l {
@@ -240,7 +246,7 @@ main {
 
 h1 {
     font-size: 4rem;
-    
+    white-space: nowrap;
 
 }
 
@@ -258,7 +264,7 @@ h2 {
 }
 h3 {
     font-size: 1rem;
-    flex: none;
+    display:block;
     /* margin-top: 25px; */
 }
 footer {
@@ -378,6 +384,7 @@ form select {
     flex-direction: row;
     
     }
+
 
    
 } 
