@@ -1,8 +1,7 @@
 /* reset styles */
 
 html {
-    /* margin: 0; */
-    /* padding: 0; */
+
     background-color: #E5EDFC;
     color: cornflowerblue;
     max-width: 1000px;
@@ -16,7 +15,6 @@ body {
 }
 
 * {
-    /* margin: 0; */
     padding: 0;
     box-sizing: border-box;
     margin: 0 auto;
@@ -106,7 +104,7 @@ a {
     position: fixed;
     left: -100%;
     top: 6.25rem;
-    bottom: 0;
+    bottom: 30rem;
     flex-direction: column;
     background-color: #fff;
     width: 100%;
@@ -273,6 +271,7 @@ footer {
     padding-top: 50px;
     border-radius: 12px;
     padding-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 /* reset */
