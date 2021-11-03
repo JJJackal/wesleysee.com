@@ -218,9 +218,7 @@ main {
     background-image: url("images/anxiiety-desktop.png")
 }
 
-.t-l {
-    order: 1;
-}
+
 .t-r {
     order:2
 }
@@ -229,6 +227,21 @@ main {
 }
 .b-r {
     order:4;
+}
+.t-l {
+    opacity: 1;
+}
+
+.overlayDiv {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    background-color: blue;
+}
+
+.overlayDiv.active {
+    opacity: 1;
 }
 
 

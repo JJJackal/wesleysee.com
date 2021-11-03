@@ -1,5 +1,5 @@
 
-
+//hamburger menu 
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 
@@ -19,3 +19,15 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
+
+
+function overlay() {
+    this.classList.toggle("active");
+    console.log(`clicked`);
+} 
+
+
+
+const projects = document.querySelectorAll(".overlayDiv");
+
+projects.forEach(n => n.addEventListener("click", overlay));
