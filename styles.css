@@ -54,11 +54,12 @@ a {
 
 .first {
     background-image: url("images/IMG_7664.jpeg");
-    background-size:100% auto;
-    overflow:hidden;
-    background-repeat:no-repeat;
+    background-size: cover;
+    /* overflow:hidden; */
+    /* background-repeat:no-repeat; */
     width: 400px;
     height: 325px;
+
    
 
     
@@ -143,7 +144,7 @@ a {
 }
 
 
-.container {
+.container, footer {
     margin-bottom: 200px;
     padding-bottom: 50px;
     display: -webkit-box;
@@ -215,7 +216,8 @@ main {
     display: inline-block;
     margin: 20px;
     box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
-    background-image: url("images/anxiiety-desktop.png")
+    background-image: url("images/anxiiety-desktop.png");
+    background-size: cover;
 }
 
 
@@ -237,11 +239,15 @@ main {
     height: 100%;
     text-align: center;
     opacity: 0;
-    background-color: blue;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    border-radius:inherit;
 }
 
 .overlayDiv.active {
-    opacity: 1;
+    opacity: 90%;
 }
 
 
@@ -281,9 +287,9 @@ h3 {
     display:block;
     /* margin-top: 25px; */
 }
-footer {
+/* footer {
     background-color: cornflowerblue;
-    height: 450px;;
+    height: 450px;
     padding-top: 50px;
     border-radius: 12px;
     padding-bottom: 15px;
@@ -296,7 +302,7 @@ footer {
     width: 400px;
     margin: 20px;
     color: white;
-}
+} */
 
 form label {
     visibility: hidden;
@@ -402,7 +408,7 @@ form select {
 
 @media (min-width: 780px) {
 
- .container  {
+ .container, footer  {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
@@ -427,6 +433,10 @@ form select {
     .arrow {
         display: none;
     }
+
+    #fs-frm {
+        margin: 10px;
+    }
 }
 
 @media (max-width: 500x) {
@@ -434,5 +444,5 @@ form select {
         width: 360px;
         background-color: black;
       
-    }
+    }   
 }
