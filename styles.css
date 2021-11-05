@@ -266,7 +266,7 @@ main {
     width: 45%; 
     text-align: left;
     max-width: 450px;    
-    min-width: 325px;
+    min-width: 275px;
     display: block;
 } 
 
@@ -446,6 +446,10 @@ form select {
 
     #fs-frm {
         margin: 10px;
+    }
+
+    .photo {
+        width: 45%;
     }
 }
 
