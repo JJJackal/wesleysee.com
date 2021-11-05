@@ -108,7 +108,7 @@ a {
     position: fixed;
     left: -100%;
     top: 6.25rem;
-    bottom: 30rem;
+    bottom: 20rem;
     flex-direction: column;
     background-color: #fff;
     width: 100%;
@@ -210,28 +210,36 @@ main {
 .test {
     width: 400px;
     height: 300px;
-    border: 2px solid white;
+    /* border: 2px solid white; */
     margin-top: 30px;
     border-radius: 10px;
     display: inline-block;
     margin: 20px;
     box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+    
+}
+
+
+
+
+.t-l, .b-r {
+    order:2;
     background-image: url("images/anxiiety-desktop.png");
     background-size: cover;
 }
 
 
-.t-r {
-    order:2
-}
 .b-l {
     order:3;
 }
 .b-r {
     order:4;
 }
-.t-l {
-    opacity: 1;
+.t-r, .b-l {
+    order: 1;
+    background-image: url("images/ChameleonConditions.png");
+    background-size: cover;
+    
 }
 
 .overlayDiv {
@@ -239,15 +247,17 @@ main {
     height: 100%;
     text-align: center;
     opacity: 0;
-    background-color: white;
-    color: black;
+    color: white;
     text-align: center;
     padding: 20px;
     border-radius:inherit;
+    position: relative;
 }
 
 .overlayDiv.active {
-    opacity: 90%;
+  opacity:1;
+  /* background-image: none; */
+  background-color: rgba(0, 0, 0, 0.7 );
 }
 
 
