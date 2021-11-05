@@ -435,7 +435,7 @@ form select {
         max-width: 500px;
     }
     .container, footer {
-        width:450px;
+        width:75%;
         margin: auto;
         margin-bottom: 25px;
     }
@@ -455,7 +455,7 @@ form select {
 
 @media (max-width: 500x) {
     .container, footer {
-        width: 360px;
+        width: 75%;
         background-color: black;
       
     }   
