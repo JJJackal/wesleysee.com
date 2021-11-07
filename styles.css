@@ -54,11 +54,17 @@ a {
 
 .first {
     background-image: url("images/IMG_7664.jpeg");
-    background-size: cover;
+    background-size: 100%;
+    width: 500px;
+    height: 400px;
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position:bottom;
+    background-position-y: -185px;
     /* overflow:hidden; */
     /* background-repeat:no-repeat; */
-    width: 400px;
-    height: 325px;
+    /* width: 400px; */
+    /* height: 350px; */
 
    
 
@@ -191,9 +197,9 @@ header {
 }
 
  .photo {
-/*     
+   
     width: 300px;
-    height: 250px; */
+    height: 250px; 
     /* border: 2px solid white; */
     margin-top: 30px;
     border-radius: 10px;
@@ -446,10 +452,6 @@ form select {
 
     #fs-frm {
         margin: 10px;
-    }
-
-    .photo {
-        width: 45%;
     }
 }
 
