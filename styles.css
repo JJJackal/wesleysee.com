@@ -2,7 +2,8 @@
 
 html {
 
-    background-color: #E5EDFC;
+    background-color: rgba(100, 149, 237, 0.2);
+    /* background-color: rgba(181, 245, 181, 0.1); */
     color: cornflowerblue;
     max-width: 1000px;
 }
@@ -32,7 +33,6 @@ form {
     display:block;
     margin:auto;
     transform: translateY(8px);
-    margin-bottom: 20px;
 }
 
 .even {
@@ -50,26 +50,6 @@ li {
 
 a {
     text-decoration: none;
-}
-
-.first {
-    background-image: url("images/IMG_7664.jpeg");
-    background-size: 100%;
-    width: 500px;
-    height: 400px;
-    background-repeat: no-repeat;
-    /* background-size: cover; */
-    background-position:bottom;
-    background-position-y: -185px;
-    /* overflow:hidden; */
-    /* background-repeat:no-repeat; */
-    /* width: 400px; */
-    /* height: 350px; */
-
-   
-
-    
-    
 }
 
 .nav-link{
@@ -148,11 +128,8 @@ a {
     box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
     
 }
-
-
-.container, footer {
-    margin-bottom: 200px;
-    padding-bottom: 50px;
+ .container, footer  {
+    padding-bottom: 50px; 
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -167,32 +144,94 @@ a {
     -ms-flex-align: center;
     align-items: center;
     font-family: 'Open Sans', sans-serif;
-    background-color: cornflowerblue;
     width: 100%;
-    padding-top: 50px;
-    border-radius: 12px;
-    color: white;
-    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+    /* padding-top: 50px; */
+    background-color: rgba(100, 149, 237, 0.3);
 }
 
+.container {
+    margin-bottom: 200px;
+}
+
+.projects {
+    /* margin-bottom: 200px; */
+    /* padding-bottom: 50px;  */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center; 
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    /* padding-top: 50px; */
+    height: 100%;
+}
+
+
+
+
 .projects, .about, .arrow, footer {
-    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.6);
     text-align: center;
 }
 
+.project-heading {
+    text-align: center;
+    margin: 0;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.6);
+    text-transform: underline;
+}
 
+.middle-photo {
+    height: fit-content;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: url("images/titusblair-on-unsplash.jpg");
+    color: white;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+    position: relative;
+    box-shadow:inset 0 0 0 2000px rgba(100, 149, 237, 0.2);
+
+}
 
 
 header {
-    height: 100%;
     padding-top: 100px;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("images/IMG_7664.jpeg");
+    
+        
 }
 
+main {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("images/tony-L-on-unsplash.jpg");
+    color: white;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+    position: relative;
+    height: 100%;
+    
+}
 .intro {
-    background-color: white;
-    color: cornflowerblue;
     text-shadow: 2px 4px 3px rgba(0,0,0,.1);
     margin-bottom: 400px;
+    background-color: rgba(100, 149, 237, 0.3);
+    color: white;
     
 }
 
@@ -205,13 +244,11 @@ header {
     border-radius: 10px;
     display: block;
     box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+    /* background-color: cornflowerblue; */
    
 } 
 
-main {
-    position: relative;
-    height: 100%;
-}
+
 
 .test {
     width: 400px;
@@ -274,6 +311,7 @@ main {
     max-width: 450px;    
     min-width: 275px;
     display: block;
+    
 } 
 
 .r {
@@ -424,7 +462,7 @@ form select {
 
 @media (min-width: 780px) {
 
- .container, footer  {
+ .container, footer, .projects  {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
@@ -440,7 +478,7 @@ form select {
     html {
         max-width: 500px;
     }
-    .container, footer {
+    .container, footer, .projects {
         width:450px;
         margin: auto;
         margin-bottom: 25px;
@@ -456,7 +494,7 @@ form select {
 }
 
 @media (max-width: 500x) {
-    .container, footer {
+    .container, footer, .projects {
         width: 350px;
         background-color: black;
       
