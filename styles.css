@@ -261,7 +261,7 @@ main {
 
 .t-l, .b-r {
     order:2;
-    background-image: url("images/anxiiety-desktop.png");
+    background: url("images/anxiiety-desktop.png") no-repeat center;
     background-size: cover;
 }
 
@@ -274,7 +274,7 @@ main {
 }
 .t-r, .b-l {
     order: 1;
-    background-image: url("images/ChameleonConditions.png");
+    background: url("images/ChameleonConditions.png") no-repeat center;
     background-size: cover;
     
 }
@@ -304,7 +304,6 @@ i {
 }
 .overlayDiv.active {
   opacity:1;
-  /* background-image: none; */
   background-color: rgba(0, 0, 0, 0.8 );
 }
 
@@ -353,6 +352,9 @@ form label {
     visibility: hidden;
 }
 
+#fs-frm {
+    width:90vw;
+}
 /* reset */
 form input,
 form select,
@@ -366,7 +368,6 @@ form label,
   border-radius: 0;
   display: block;
   width: 90%;
-  
   padding: 0;
   margin: 0;
   -webkit-appearance: none;
@@ -435,6 +436,7 @@ form select {
 }
 
 
+
 .submit {
     color: cornflowerblue;
     margin-top: 20px;
@@ -473,12 +475,6 @@ form select {
         margin:0;
         /* padding-left: 20px; */
     }
-
-    .test {
-        width: 235px;
-        height: 300px;
-    }
-
     .intro {
         width: 100%;
     }
@@ -486,22 +482,21 @@ form select {
     h2, h3, div  {
         white-space: normal;
     }
+
+    .top {
+        padding-top: 50px;
+    }
+    
 } 
 
-
-
-@media (max-width: 780px) {
-    .container, footer, .projects {
-        margin: 0 auto;
-        margin-bottom: 25px;
-    }
-
-    
-
-    #fs-frm {
-        margin: 10px;
+@media (max-width: 500px) {
+    .test {
+        width: 300px;
+        height: 300px;
     }
 }
+
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
