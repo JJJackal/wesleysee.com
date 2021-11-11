@@ -238,6 +238,7 @@ main {
     display: block;
     box-shadow: 0 1px 2px 0 rgb(60 64 67 / 50%), 0 1px 3px 1px rgb(60 64 67 / 15%);
     background-color: rgba(100, 149, 237, 0.3);
+    overflow:hidden;
     /* background-color: cornflowerblue; */
    
 } 
@@ -317,7 +318,7 @@ a {
     position: relative;
     /* width: 50%;  */
     text-align: left;
-    max-width: 500px;    
+    max-width: 600px;    
     /* min-width: 275px; */
     display: block;
     
@@ -329,7 +330,6 @@ a {
 
 h1 {
     font-size: 8vh;
-    white-space: nowrap;
 
 }
 
@@ -338,11 +338,13 @@ h1 {
 }
 h2 {
     font-size: 2rem;
-    margin-bottom: 30px;
+    margin-bottom: 30px; 
     white-space: nowrap;
-    
 }
 
+.tight {
+    max-width: 500px;
+}
 h3 {
     font-size: 1rem;
     display:block;
@@ -453,6 +455,10 @@ form select {
     /* height: 75px; */
 }
 
+h3 {
+    white-space: normal;
+}
+
 .material-icons.md-light { color: rgba(255, 255, 255, 1); }
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
@@ -486,7 +492,7 @@ form select {
         width: 100%;
     }
 
-    h2, h3, div  {
+    h2, div  {
         white-space: normal;
     }
 
