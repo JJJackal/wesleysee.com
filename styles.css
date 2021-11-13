@@ -27,6 +27,7 @@ form {
     max-width: 600px;
 }
 
+
 /* hamburger menu styles */
 li {
     list-style: none;
@@ -35,6 +36,19 @@ li {
 a {
     text-decoration: none;
 }
+
+.project-body {
+    color: white;
+    padding-left: 20px;
+    background-color:rgba(100, 149, 237, 0.6);
+    box-shadow: none;
+}
+
+#project-body {
+    background-color:inherit;
+    box-shadow:inherit;
+}
+
 
 .nav-link{
     font-size: 1.6rem;
@@ -58,6 +72,10 @@ a {
 
 .navbar {
     height: 3rem;
+   
+}
+
+.mainPage {
     visibility: hidden;
 }
 
@@ -189,7 +207,7 @@ a {
 }
 
 
-header {
+.header {
     padding-top: 100px;
     height: 100vh;
     background-position: center;
@@ -314,6 +332,10 @@ a {
     text-decoration: none;
     color: cornflowerblue;
     display: inline-block;
+}
+
+a:hover {
+    color:whitesmoke;
 }
  .hello {
     position: relative;
