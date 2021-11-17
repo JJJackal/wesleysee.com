@@ -533,6 +533,10 @@ p {
         padding-right: 10px;
     }
 
+    footer {
+        padding-right: 10px;
+    }
+
     html {
         width: 100vw;
         margin:0;
